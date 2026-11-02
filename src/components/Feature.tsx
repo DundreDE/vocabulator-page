@@ -22,9 +22,14 @@ export default function Features() {
             className="rounded-lg border border-stone-700"
           />
         </div>
-        <div className="grid gap-6">
+        <div className="grid text-center gap-6">
           <h2 className="text-2xl font-bold tracking-tight md:text-7xl">
             Share your decks with friends or your class.
+          </h2>
+        </div>
+        <div className="grid gap-6">
+          <h2 className="text-2xl font-bold tracking-tight md:text-7xl">
+            Be ready for your next test.
           </h2>
         </div>
       </div>
