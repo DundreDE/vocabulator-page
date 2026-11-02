@@ -1,3 +1,6 @@
+import { APP_URL } from "@/lib/config";
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden px-6 pt-32 pb-24">
@@ -10,6 +13,12 @@ export default function Hero() {
           <p className="mt-6 text-xl text-white/80 sm:text-2xl lg:text-3xl">
             Learn vocabs the new way.
           </p>
+          <Link
+            href={APP_URL}
+            className="mt-8 inline-block rounded-md bg-amber-800 px-6 py-3 font-medium hover:bg-amber-900"
+          >
+            Get Started
+          </Link>
         </div>
       </div>
     </section>
