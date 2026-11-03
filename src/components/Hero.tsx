@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden  px-6 pt-32 pb-24">
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 ">
+    <section className="relative overflow-hidden flex items-center justify-center px-6 min-h-dvh">
+      <div className="relative mx-auto grid max-w-3xl text-center">
         <Reveal>
           <div className="text-center">
             <h1 className="text-7xl font-bold leading-tight text-white sm:text-8xl lg:text-9xl">
