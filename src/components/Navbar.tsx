@@ -19,13 +19,13 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-stone-800">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <nav className="mx-auto flex max-w-5xl items-center justify-end px-4 py-3">
         <ul className="hidden gap-6 md:flex">
           {items.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="text-stone-200 hover:text-stone-400"
+                className="text-stone-200 text-lg font-bold hover:text-stone-400"
               >
                 {item.label}
               </Link>
@@ -56,6 +56,25 @@ export default function Navbar() {
           </svg>
         </button>
       </nav>
+
+      {open && (
+        <ul
+          id="mobile-menu"
+          className="flex flex-col border-t border-stone-700 px-4 py-2 md:hidden"
+        >
+          {items.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                className="block rounded px-2 py-2 text-stone-300 hover:bg-stone-700 hover:text-white text-lg font-bold"
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </header>
   );
 }
