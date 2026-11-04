@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-3xl text-center">
         <Reveal>
           <div className="text-center">
-            <h1 className="text-7xl font-bold leading-tight text-white sm:text-8xl lg:text-9xl">
+            <h1 className="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
               Vocabulator
             </h1>
             <p className="mt-6 text-xl text-white/80 sm:text-2xl lg:text-3xl">
