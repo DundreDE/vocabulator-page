@@ -3,13 +3,14 @@ import Link from "next/link";
 
 const features = [
   {
-    title: "Space Repetition learning",
-    text: "Learn vocab cards so that they are staying in your mind.",
-  },
-  {
     title: "Create or upload your decks",
     text: "Create your own decks by typing or scanning,",
   },
+  {
+    title: "Space Repetition learning",
+    text: "Learn vocab cards so that they are staying in your mind.",
+  },
+
   {
     title: "Share your decks",
     text: "Share your decks with your friends and class and learn together.",
