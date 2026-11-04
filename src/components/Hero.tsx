@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden flex items-center justify-center px-6 min-h-dvh">
+    <section
+      id="hero"
+      className="relative overflow-hidden flex items-center justify-center px-6 min-h-dvh"
+    >
       <div className="relative mx-auto grid max-w-3xl text-center">
         <Reveal>
           <div className="text-center">

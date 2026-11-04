@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 const features = [
   {
     title: "Space Repetition learning",
-    text: "Learn vocabs so that they are staying in your mind.",
+    text: "Learn vocab cards so that they are staying in your mind.",
   },
   {
     title: "Create or upload your decks",
@@ -17,7 +17,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="flex min-h-dvh items-center px-6 py-24">
+    <section id="Features" className="flex min-h-dvh items-center px-6 py-24">
       <div className="relative mx-auto max-w-3xl text-center">
         <Reveal>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
