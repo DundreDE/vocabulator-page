@@ -22,7 +22,7 @@ export default function Features() {
           </h2>
         </Reveal>
 
-        <div className="mt-12 flex flex-col gap-6 p-4">
+        <div className="mt-10 flex flex-col gap-6 p-4">
           <Reveal>
             <Demo />
           </Reveal>
