@@ -1,21 +1,7 @@
 import Reveal from "@/components/Reveal";
+import { APP_URL } from "@/lib/config";
 import Link from "next/link";
-
-const features = [
-  {
-    title: "Create or upload your decks",
-    text: "Create your own decks by typing or scanning,",
-  },
-  {
-    title: "Space Repetition learning",
-    text: "Learn vocab cards so that they are staying in your mind.",
-  },
-
-  {
-    title: "Share your decks",
-    text: "Share your decks with your friends and class and learn together.",
-  },
-];
+import Demo from "./Demo";
 
 export default function Features() {
   return (
@@ -37,14 +23,9 @@ export default function Features() {
         </Reveal>
 
         <div className="mt-12 flex flex-col gap-6 p-4">
-          {features.map((f, i) => (
-            <Reveal key={f.title} delay={i * 0.1}>
-              <div className="rounded-lg bg-stone-900/30 p-2 border border-white/30">
-                <h3 className="text-3xl font-semibold text-white">{f.title}</h3>
-                <p className="mt-3 text-xl text-white/70">{f.text}</p>
-              </div>
-            </Reveal>
-          ))}
+          <Reveal>
+            <Demo />
+          </Reveal>
         </div>
         <Reveal>
           <div className="mt-24 flex flex-col gap-6">
@@ -52,7 +33,7 @@ export default function Features() {
               So why are you waiting?
             </h2>
             <Link
-              href="https://vocabulator-cyan.vercel.app"
+              href={APP_URL}
               className="rounded-xl p-6 text-4xl font-bold bg-amber-800 hover:bg-amber-900"
             >
               Get Started now

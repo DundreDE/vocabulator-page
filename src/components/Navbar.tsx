@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { APP_URL } from "@/lib/config";
 
 type NavItem = {
   label: string;
@@ -11,7 +12,7 @@ type NavItem = {
 const items: NavItem[] = [
   { label: "Start", href: "#hero" },
   { label: "Features", href: "#Features" },
-  { label: "Get Started", href: "https://vocabulator-cyan.vercel.app" },
+  { label: "Get Started", href: APP_URL },
 ];
 
 export default function Navbar() {

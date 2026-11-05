@@ -5,11 +5,16 @@ import { useState } from "react";
 const cards = [
   {
     prompt: "Create or upload your decks",
-    answer: "Create your own decks by typing or scanning",
+    answer: "Create your own decks by typing or scanning,",
   },
   {
-    prompt: "Share decks",
-    answer: "share share",
+    prompt: "Space Repetition learning",
+    answer: "Learn vocab cards so that they are staying in your mind.",
+  },
+
+  {
+    prompt: "Share your decks",
+    answer: "Share your decks with your friends and class and learn together.",
   },
 ];
 
@@ -29,13 +34,10 @@ export default function Demo() {
   };
 
   return (
-    <section
-      id="demo"
-      className="flex flex-col min-h-dvh items-center gap-4 p-4 justify-center"
-    >
-      <div className="flex w-full max-w-sm flex-col gap-4 sm:max-w-xl">
-        <div className="flex aspect-[31/20] w-full items-center justify-center rounded border p-4 text-center">
-          <p className="text-4xl font-semibold">
+    <section id="demo" className="flex justify-center p-4">
+      <div className="flex w-[calc(100vw-2rem)] max-w-xl flex-col gap-4">
+        <div className="flex h-56 items-center justify-center overflow-hidden rounded border p-4 text-center sm:h-64">
+          <p className="w-full break-words text-2xl font-semibold sm:text-4xl">
             {flipped ? card.answer : card.prompt}
           </p>
         </div>
