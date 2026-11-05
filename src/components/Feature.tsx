@@ -20,6 +20,15 @@ const features = [
 export default function Features() {
   return (
     <section id="Features" className="flex min-h-dvh items-center px-6 py-24">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-1/3 -left-24 h-64 w-64 rounded-full bg-amber-600/30 blur-3xl"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute bottom-1/4 -right-24 h-64 w-64 rounded-full bg-amber-600/30 blur-3xl"
+      />
+
       <div className="relative mx-auto max-w-3xl text-center">
         <Reveal>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
